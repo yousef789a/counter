@@ -62,14 +62,14 @@ function createAgent() {
   }
 
   const newUser = {
-      id: 'user-' + Date.now(),
-      email: email,
-      password: pass,
-      name: name,
-      role: role,
-      status: 'active',
-      supervisorId: null
-  };
+    id: email.split('@')[0], // This makes the ID "E36307" if the email is E36307@mail.com
+    email: email,
+    password: pass,
+    name: name,
+    role: role,
+    status: 'active',
+    supervisorId: null
+};
   users.push(newUser);
   localStorage.setItem('users', JSON.stringify(users));
 
