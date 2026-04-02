@@ -1,31 +1,20 @@
-# Agent Performance Counter & Admin Dashboard
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-A comprehensive web application designed for call center agents to track their daily performance metrics, and for administrators to manage teams, view analytics, and broadcast announcements.
+# Run and deploy your AI Studio app
 
-## Features
+This contains everything you need to run your app locally.
 
-### 👨‍💻 Agent View
-* **Daily Counter:** Track calls, payments, full payments, and accounts removed from collections.
-* **Auto-Calculations:** Automatically calculates conversion percentages and estimated time available.
-* **Tier System:** Visual badges (Tier 1-5) based on performance thresholds.
-* **Real-Time Chat:** Direct messaging with supervisors and admins.
-* **Announcements:** Sticky pinned banners for important global or team-specific updates.
+View your app in AI Studio: https://ai.studio/apps/1df47d79-0a70-482f-bb06-865c8f0758f6
 
-### 👑 Admin Dashboard
-* **User Management:** Create, edit, deactivate, and delete Agent and Supervisor accounts.
-* **Kanban Team Organization:** Drag-and-drop interface to assign agents to specific supervisors.
-* **Performance Analytics:** View aggregated stats for the entire floor, specific teams, or individual agents.
-* **Hierarchical Announcements:** Broadcast pinned messages globally, to specific teams, or to individual agents.
-* **Export:** Export raw call logs or aggregated performance reports directly to Excel (.xlsx).
+## Run Locally
 
-## Tech Stack
-* **Frontend:** HTML5, CSS3, Vanilla JavaScript
-* **Data Storage:** LocalStorage (JSON)
-* **Libraries:** Chart.js (Analytics), SheetJS (Excel Export)
+**Prerequisites:**  Node.js
 
-## How to Run
-1. Clone or download the repository.
-2. Open `index.html` in any modern web browser.
-3. **Default Admin Login:**
-   * **Email:** admin@admin.com
-   * **Password:** admin
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
