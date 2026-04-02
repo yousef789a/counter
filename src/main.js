@@ -64,6 +64,10 @@ if (signIn) {
     const users = JSON.parse(localStorage.getItem('users') || '[]');
     const user = users.find(u => u.email === email && u.password === password);
     if (user) {
+      if (user.status === 'inactive') {
+        showMessage('Account deactivated. Contact admin.', 'signInMessage');
+        return;
+      }
       localStorage.setItem('loggedInUserId', user.id);
       localStorage.setItem('loggedInEmail', user.email);
       localStorage.setItem('loggedInRole', user.role);
