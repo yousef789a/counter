@@ -1,20 +1,21 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Performance Counter Dashboard
 
-# Run and deploy your AI Studio app
+A web-based tool built for call center agents and admins to track performance, log call outcomes, and monitor team metrics. 
 
-This contains everything you need to run your app locally.
+## Features
+* **Agent Logging:** Agents can log Account Numbers, Sequence IDs, and Call Outcomes (Payment, Full Payment, Remove from Collection).
+* **Admin Dashboard:** Admins can view total team performance metrics (e.g., Payments/Total Calls).
+* **Calendar Filtering:** Filter performance data by specific days or date ranges.
+* **Export to Excel:** Download raw call logs and performance reports as CSV/Excel files.
+* **Local Storage:** Runs entirely locally in the browser without the need for a backend database.
 
-View your app in AI Studio: https://ai.studio/apps/1df47d79-0a70-482f-bb06-865c8f0758f6
+## Technologies Used
+* HTML5
+* CSS3
+* Vanilla JavaScript (Local Storage)
+* Chart.js (for data visualization)
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## How to Use
+1. Open the website.
+2. Log in using your Agent or Admin credentials.
+3. Use the counter to track your daily stats or log specific account outcomes.
