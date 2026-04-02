@@ -62,7 +62,7 @@ function createAgent() {
   }
 
   const newUser = {
-    id: email.split('@')[0], // This makes the ID "E36307" if the email is E36307@mail.com
+    id: email.split('@')[0]
     email: email,
     password: pass,
     name: name,
