@@ -92,3 +92,24 @@ h1 { font-weight: 800; font-size: 32px; margin: 0 0 4px 0; letter-spacing: -0.04
 @keyframes btn-spin { to { transform: rotate(360deg); } }
 .btns{ display: flex; justify-content: space-between; }
 .arrow{ position: absolute; top: -18px; left: 0; margin: 0; padding: 0; transform: translateX(0); }
+/* Admin Table */
+.user-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 13px; }
+.user-table th, .user-table td { padding: 10px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.user-table th { color: var(--text-dim); font-weight: 700; text-transform: uppercase; }
+.action-btn { background: rgba(255,255,255,0.1); border: none; color: white; padding: 5px 10px; border-radius: 6px; cursor: pointer; font-size: 11px; margin-right: 5px; transition: 0.2s; }
+.action-btn:hover { background: var(--primary); color: var(--bg); }
+.action-btn.danger:hover { background: var(--danger); color: white; }
+
+/* Kanban Board */
+.kanban-board { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px; }
+.kanban-column { background: rgba(0,0,0,0.2); border-radius: 12px; min-width: 250px; padding: 10px; display: flex; flex-direction: column; gap: 10px; min-height: 150px; border: 1px dashed rgba(255,255,255,0.1); }
+.kanban-column-title { font-size: 13px; font-weight: 700; color: var(--primary); text-transform: uppercase; text-align: center; margin-bottom: 5px; }
+.draggable-card { background: var(--card); border: 1px solid rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; cursor: grab; font-size: 13px; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+.draggable-card:active { cursor: grabbing; opacity: 0.8; }
+.draggable-card.dragging { opacity: 0.5; }
+
+/* Modal */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); display: flex; justify-content: center; align-items: center; z-index: 1000; opacity: 0; visibility: hidden; transition: 0.2s; }
+.modal-overlay.active { opacity: 1; visibility: visible; }
+.modal-content { background: var(--card); padding: 25px; border-radius: 16px; width: 90%; max-width: 400px; border: 1px solid rgba(255,255,255,0.1); }
+.modal-title { font-size: 18px; font-weight: 800; margin-bottom: 15px; }
